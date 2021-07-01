@@ -1,0 +1,11 @@
+{
+  "name": "factory_instance_class",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-object.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GreeD",
+  "license": "ISC"
+}
