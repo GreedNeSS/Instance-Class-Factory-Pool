@@ -15,7 +15,6 @@ const logable = fields => {
 					this.values[key] = obj[key];
 				} else console.log('Validation failed:', key, obj[key]);
 			}
-			hash = null;
 		}
 
 		toString() {
