@@ -1,7 +1,6 @@
 'use strict';
 
 const logable = fields => {
-	let hash = {};
 
 	class Logable {
 
@@ -9,7 +8,7 @@ const logable = fields => {
 			this.values = {};
 			const obj = { name, born };
 			for (const key in obj) {
-				const def = hash[key];
+				const def = fields[key];
 				if (typeof obj[key] === def.type &&
 					def.validate(obj[key])) {
 					this.values[key] = obj[key];
@@ -27,7 +26,6 @@ const logable = fields => {
 	}
 
 	for (const key in fields) {
-		hash[key] = fields[key];
 		Object.defineProperty(Logable.prototype, key, {
 			get() {
 				console.log('Reading key:', key);
@@ -41,7 +39,6 @@ const logable = fields => {
 					def.validate(value)
 				);
 
-				console.log({ value });
 				if (valid) this.values[key] = value;
 				else console.log('Validation failed:', key, value);
 			}
