@@ -1,11 +1,19 @@
 {
-  "name": "factory_instance_class",
-  "version": "1.0.0",
-  "description": "",
-  "main": "1-object.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "GreeD",
-  "license": "ISC"
+	"name": "factory_instance_class",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./JavaScript/1-readFileSync.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GreedNeSS/factory_with_validated_constructor.git"
+	},
+	"author": "GreedNeSS",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/GreedNeSS/factory_with_validated_constructor.git/issues"
+	},
+	"homepage": "https://github.com/GreedNeSS/factory_with_validated_constructor.git#readme"
 }

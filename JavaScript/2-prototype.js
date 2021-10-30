@@ -31,7 +31,7 @@ const logable = fields => {
 			result += this.values[key] + ' ';
 		}
 		return result;
-	}
+	};
 
 	return Logable;
 

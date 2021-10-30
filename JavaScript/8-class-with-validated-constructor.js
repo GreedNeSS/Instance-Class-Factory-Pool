@@ -4,22 +4,22 @@ const logable = fields => {
 
 	class Logable {
 
-		constructor(name, born) {
+		constructor(...args) {
 			this.values = {};
-			const obj = { name, born };
-			for (const key in obj) {
+			for (const key in fields) {
 				const def = fields[key];
-				if (typeof obj[key] === def.type &&
-					def.validate(obj[key])) {
-					this.values[key] = obj[key];
-				} else console.log('Validation failed:', key, obj[key]);
+				const elem = args.shift();
+				if (typeof elem === def.type &&
+					def.validate(elem)) {
+					this.values[key] = elem;
+				} else console.log('Validation failed:', key, elem);
 			}
 		}
 
 		toString() {
 			let result = this.constructor.name + ': ';
 			for (const key in fields) {
-				result += this.values[key] + ' ';
+				result += `${key} = "` + this.values[key] + '"; ';
 			}
 			return result;
 		}
