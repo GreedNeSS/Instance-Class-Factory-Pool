@@ -1,19 +1,19 @@
 {
-	"name": "factory_instance_class",
+	"name": "instance-class-factory-pool",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Inctance => Class => Factory => Pool(eighth example is a class with validated constructor)",
 	"main": "./JavaScript/1-readFileSync.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/GreedNeSS/factory_with_validated_constructor.git"
+		"url": "git+https://github.com/GreedNeSS/Instance-Class-Factory-Pool.git"
 	},
 	"author": "GreedNeSS",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/GreedNeSS/factory_with_validated_constructor.git/issues"
+		"url": "https://github.com/GreedNeSS/Instance-Class-Factory-Pool.git/issues"
 	},
-	"homepage": "https://github.com/GreedNeSS/factory_with_validated_constructor.git#readme"
+	"homepage": "https://github.com/GreedNeSS/Instance-Class-Factory-Pool.git#readme"
 }
